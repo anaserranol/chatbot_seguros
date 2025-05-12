@@ -27,24 +27,24 @@ Para el contexto, hemos creado dos archivos csv y un txt:
 El prompt que recibe el chatbot es la combinación de la pregunta del usuario y el contexto anterior, tras haber escogido la información más relevante para contestar.
 
 ## Flujo y funcionamiento del chatbot
-[Usuario] 
-   ├─ Introduce una pregunta
-   ▼
-[Frontend (HTML/JS)]
-   ├─ Captura input del usuario
-   ├─ Envía pregunta al backend vía AJAX (fetch/POST)
-   ▼
-[Flask Backend]
-   ├─ Crea el contexto basado en los datos del CSV y TXT
-   ├─ Prepara el prompt con el contexto
-   ├─ Llama a Ollama y le pasa el prompt
-   ▼
-[Respuesta de Ollama (Mistral)]
-   │ 
-   ├─ Flask recibe la respuesta y la envía al frontend
-   ▼
-[Frontend]
-   └─ Muestra la respuesta del chatbot en la interfaz
+    .
+    |  [Usuario] 
+    ├─ Introduce una pregunta
+    ▼
+    |  [Frontend (HTML/JS)]
+    ├─ Captura input del usuario
+    ├─ Envía pregunta al backend vía AJAX (fetch/POST)
+    ▼
+    |  [Flask Backend]
+    ├─ Crea el contexto basado en los datos del CSV y TXT
+    ├─ Prepara el prompt con el contexto
+    ├─ Llama a Ollama y le pasa el prompt
+    ▼
+    |  [Respuesta de Ollama (Mistral)]
+    ├─ Flask recibe la respuesta y la envía al frontend
+    ▼
+    |    [Frontend]
+    └─ Muestra la respuesta del chatbot en la interfaz
 
 El usuario le realiza una pregunta al chatbot, la cual se envía al servidor Flask. Tras ello, el backend construye un prompt combinando el contexto más relevante de los datos cargados desde archivos CSV y TXT con la pregunta del usuario y se lo pasa al LLM Mistral de Ollama. Una vez Mistral tiene una respuesta, Flask recibe dicha respuesta y la envía de vuelta al navegador para mostrarse al usuario.
 
