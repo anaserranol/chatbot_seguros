@@ -5,9 +5,9 @@
 ___
 ## Introducción al repositorio
 En nuestro proyecto nos enfocamos en el desarrollo de un chatbot para tres casos de usos:
-- 1.- **Atención a usuarios web**: cualquier internauta, cliente o no de la aseguradora, que accede a la página web de la aseguradora y quiere utilizar el chatbot para obtener información acerca de los productos que se ofrecen, darse de alta y otros temas relacionados con información general.
-- 2.- **Soporte a clientes**: clientes que ya se han identificado en la página web de la aseguradora y que utilizan el chatbot para obtener información sobre sus productos y recomendaciones basadas en su perfil.
-- 3.- **Apoyo a los empleados**: empleados de la aseguradora que utilizan el chatbot para agilizar tareas y obtener información y documentación sobre procesos o clientes.
+1. **Atención a usuarios web**: cualquier internauta, cliente o no de la aseguradora, que accede a la página web de la aseguradora y quiere utilizar el chatbot para obtener información acerca de los productos que se ofrecen, darse de alta y otros temas relacionados con información general.
+2. **Soporte a clientes**: clientes que ya se han identificado en la página web de la aseguradora y que utilizan el chatbot para obtener información sobre sus productos y recomendaciones basadas en su perfil.
+3. **Apoyo a los empleados**: empleados de la aseguradora que utilizan el chatbot para agilizar tareas y obtener información y documentación sobre procesos o clientes.
 En este repositorio nos centramos en el primer caso de uso: atención a usuarios web.
 
 ## Tecnologías utilizadas
