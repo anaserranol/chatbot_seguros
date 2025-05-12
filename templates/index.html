@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Chatbot de Seguros</title>
+  <link rel="stylesheet" href="../static/style.css"/>
+</head>
+<body>
+  <div class="mainPage">
+    <h1> Chatbot de MS Seguros</h1>
+    <div class="wholeContent">
+      <div class="leftPart">
+        <div id="chat">
+          <div class="msg msg_bot">
+            <div class="msg_bot_text">
+              {{ saludo }}
+            </div>
+          </div>
+        </div>
+        <div class="writtingPart">
+          <input type="text" id="input" placeholder="Haz una pregunta..." />
+          <button id="sendButton"> Enviar </button>
+        </div>
+      </div>
+      <div class="rightPart">
+        <h2> Preguntas frecuentes </h2>
+        <div class="questions">
+          <span class="questionButton" id="clientArea"> Acceso a mi área cliente </span>
+          <span class="questionButton" id="newUser"> ¿Cómo puedo darme de alta? </span>
+          <span class="questionButton" id="registerUser"> ¿Cómo me puedo registrar? </span>
+          <span class="questionButton" id="contactInfo"> ¿Cómo puedo contactar con vosotros? </span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <footer id="footerMS">
+     <img src="https://www.managementsolutions.com/themes/custom/ms/footer_logo.svg" alt="Logo MS" />
+  </footer>
+  <script src="../static/script.js"></script>
+</body>
+</html>
