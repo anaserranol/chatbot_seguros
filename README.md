@@ -43,7 +43,7 @@ El prompt que recibe el chatbot es la combinación de la pregunta del usuario y 
     |  [Respuesta de Ollama (Mistral)]
     ├─ Flask recibe la respuesta y la envía al frontend
     ▼
-    |    [Frontend]
+    |  [Frontend]
     └─ Muestra la respuesta del chatbot en la interfaz
 
 El usuario le realiza una pregunta al chatbot, la cual se envía al servidor Flask. Tras ello, el backend construye un prompt combinando el contexto más relevante de los datos cargados desde archivos CSV y TXT con la pregunta del usuario y se lo pasa al LLM Mistral de Ollama. Una vez Mistral tiene una respuesta, Flask recibe dicha respuesta y la envía de vuelta al navegador para mostrarse al usuario.
