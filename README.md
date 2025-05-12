@@ -66,9 +66,17 @@ El usuario le realiza una pregunta al chatbot, la cual se envía al servidor Fla
 - Ollama instalado y funcionando localmente
 - Mistral descargado: `ollama run mistral
 
+Para instalarse las dependencias:
 ```bash
 pip install -r requirements.txt
 ```
+
+Para poner en funcionamiento la aplicación web en local:
+```bash
+python3 app.py
+```
+
+Una vez se haya inicializado el servidor Flask, puedes acceder a la aplicación en: http://127.0.0.1:5000
 
 ## Links
 - Mistral: https://ollama.com/library/mistral
